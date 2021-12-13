@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Object-method</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var person =
+        {
+
+            firstname: "Thao",
+                    lastname: "Ho",
+                    id: "123456",
+                    email: "thaohtn@gmail.com",
+                    fullname: function () {
+
+                        return this.firstname + " " + this.lastname;
+            }
+        };
+        document.getElementById("demo").innerHTML = person.fullname() + " " + person.email;
+    </script>
+
+</body>
+</html>
